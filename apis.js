@@ -33,7 +33,7 @@ app.get("/", (_req, res) =>
   `)
 );
 
-var data = {};
+var data = {'0': '0', '1':'0'};
 
 app.post("/registerDevice", function(req, res){
     if(!req.body.hasOwnProperty("device") && !req.body.hasOwnProperty("val")){
